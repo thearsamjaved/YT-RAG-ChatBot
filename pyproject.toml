@@ -1,0 +1,53 @@
+[project]
+name = "youtube-chatbot-rag"
+version = "0.1.0"
+description = "A YouTube video chatbot using RAG (Retrieval-Augmented Generation)"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "streamlit>=1.29.0",
+    "youtube-transcript-api>=0.6.1",
+    "langchain>=0.1.0",
+    "langchain-core>=0.1.0",
+    "langchain-community>=0.0.13",
+    "langchain-huggingface>=0.0.1",
+    "langchain-qwq>=0.1.0",
+    "faiss-cpu>=1.7.4",
+    "sentence-transformers>=2.2.2",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[project.scripts]
+youtube-chatbot = "youtube_chatbot:main"
