@@ -52,30 +52,6 @@ An intelligent conversational AI system that enables you to chat with YouTube vi
    uv run streamlit run youtube_chatbot.py
    ```
 
-### Alternative Installation with pip
-
-1. **Clone and navigate**
-   ```bash
-   git clone <repository-url>
-   cd youtube-chatbot-rag
-   ```
-
-2. **Create virtual environment**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the application**
-   ```bash
-   streamlit run youtube_chatbot.py
-   ```
-
 ## 📖 Usage Guide
 
 ### Step 1: Configure Your Setup
